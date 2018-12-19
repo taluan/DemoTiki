@@ -33,9 +33,12 @@ class KeywordCollectionViewCell: UICollectionViewCell {
     }
     
     func getCellSizeWithHeight(_ height: CGFloat, _ data: Any) -> CGSize {
-        self.configCellWithData(data)
-        self.keywordLabel.sizeToFit()
-        let string = self.keywordLabel.text!
+        var string = ""
+        if let keyword = data as? KeywordModel {
+            string = keyword.keyword
+        } else if let history = data as? KeywordObject {
+            string = history.keyword
+        }
         var width: CGFloat = MAX_LENGTH_BOX_CONTENT
         if let index = string.splitSentenceIndex() {
             let line1 = String(string.prefix(upTo: index))
