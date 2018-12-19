@@ -27,6 +27,7 @@ class KeywordCollectionViewCell: UICollectionViewCell {
             self.keywordLabel.text = keyword.keyword
         } else if let history = data as? KeywordObject {
             self.keywordLabel.text = history.keyword
+            self.iconImageView.isHidden = true
         }
         
     }
