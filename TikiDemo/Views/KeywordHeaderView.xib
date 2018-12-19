@@ -1,0 +1,54 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="14460.31" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" colorMatched="YES">
+    <device id="retina4_7" orientation="portrait">
+        <adaptation id="fullscreen"/>
+    </device>
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="14460.20"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <objects>
+        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner"/>
+        <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
+        <view contentMode="scaleToFill" id="iN0-l3-epB" customClass="KeywordHeaderView" customModule="TikiDemo" customModuleProvider="target">
+            <rect key="frame" x="0.0" y="0.0" width="375" height="60"/>
+            <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+            <subviews>
+                <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Label" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="xKA-9v-Ly1">
+                    <rect key="frame" x="16" y="0.0" width="343" height="60"/>
+                    <fontDescription key="fontDescription" name="HelveticaNeue-Medium" family="Helvetica Neue" pointSize="17"/>
+                    <nil key="textColor"/>
+                    <nil key="highlightedColor"/>
+                </label>
+                <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="zJC-Kh-SVk">
+                    <rect key="frame" x="279" y="5" width="80" height="50"/>
+                    <fontDescription key="fontDescription" name="HelveticaNeue-Medium" family="Helvetica Neue" pointSize="17"/>
+                    <state key="normal" title="Xóa tất cả">
+                        <color key="titleColor" red="0.94695199470000002" green="0.66231895070000002" blue="0.13500043219999999" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                    </state>
+                </button>
+            </subviews>
+            <color key="backgroundColor" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+            <constraints>
+                <constraint firstItem="xKA-9v-Ly1" firstAttribute="top" secondItem="iN0-l3-epB" secondAttribute="top" id="5S8-BX-etS"/>
+                <constraint firstItem="zJC-Kh-SVk" firstAttribute="top" secondItem="iN0-l3-epB" secondAttribute="top" constant="5" id="K1W-kO-H2P"/>
+                <constraint firstAttribute="trailing" secondItem="zJC-Kh-SVk" secondAttribute="trailing" constant="16" id="NA2-Bg-g6S"/>
+                <constraint firstItem="xKA-9v-Ly1" firstAttribute="bottom" secondItem="iN0-l3-epB" secondAttribute="bottom" id="Q0J-ry-aVt"/>
+                <constraint firstAttribute="trailing" secondItem="xKA-9v-Ly1" secondAttribute="trailing" constant="16" id="QA4-CG-C1d"/>
+                <constraint firstItem="xKA-9v-Ly1" firstAttribute="leading" secondItem="iN0-l3-epB" secondAttribute="leading" constant="16" id="T2X-x9-Ger"/>
+                <constraint firstAttribute="bottom" secondItem="zJC-Kh-SVk" secondAttribute="bottom" constant="5" id="g3m-bP-DAV"/>
+                <constraint firstItem="xKA-9v-Ly1" firstAttribute="leading" secondItem="iN0-l3-epB" secondAttribute="leading" constant="16" id="kIq-3d-HaM"/>
+                <constraint firstAttribute="bottom" secondItem="xKA-9v-Ly1" secondAttribute="bottom" id="mwi-QA-Hs2"/>
+                <constraint firstAttribute="trailing" secondItem="xKA-9v-Ly1" secondAttribute="trailing" constant="16" id="mx2-4y-mmC"/>
+                <constraint firstItem="xKA-9v-Ly1" firstAttribute="top" secondItem="iN0-l3-epB" secondAttribute="top" id="woP-Cr-CuZ"/>
+            </constraints>
+            <freeformSimulatedSizeMetrics key="simulatedDestinationMetrics"/>
+            <connections>
+                <outlet property="headerTitleLabel" destination="xKA-9v-Ly1" id="4gz-2m-LGu"/>
+                <outlet property="rightButton" destination="zJC-Kh-SVk" id="9QG-Rg-83N"/>
+            </connections>
+            <point key="canvasLocation" x="132" y="-142.1289355322339"/>
+        </view>
+    </objects>
+</document>

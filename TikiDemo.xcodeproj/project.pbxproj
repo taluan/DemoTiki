@@ -1,0 +1,684 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 50;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		2CC0196E2A2DEE0D3BEC114D /* Pods_TikiDemo.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = C6452D9A460DB15C3F58FBC0 /* Pods_TikiDemo.framework */; };
+		742E4A2221CA06EA00244F04 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 742E4A2121CA06EA00244F04 /* AppDelegate.swift */; };
+		742E4A2421CA06EA00244F04 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 742E4A2321CA06EA00244F04 /* ViewController.swift */; };
+		742E4A2721CA06EA00244F04 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 742E4A2521CA06EA00244F04 /* Main.storyboard */; };
+		742E4A2921CA06EB00244F04 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 742E4A2821CA06EB00244F04 /* Assets.xcassets */; };
+		742E4A2C21CA06EB00244F04 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 742E4A2A21CA06EB00244F04 /* LaunchScreen.storyboard */; };
+		742E4A3721CA06EB00244F04 /* TikiDemoTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 742E4A3621CA06EB00244F04 /* TikiDemoTests.swift */; };
+		742E4A4721CA08A700244F04 /* String+Ext.swift in Sources */ = {isa = PBXBuildFile; fileRef = 742E4A4621CA08A700244F04 /* String+Ext.swift */; };
+		742E4A4921CA093A00244F04 /* UIImageView+Ext.swift in Sources */ = {isa = PBXBuildFile; fileRef = 742E4A4821CA093A00244F04 /* UIImageView+Ext.swift */; };
+		742E4A4B21CA097700244F04 /* UIView+Ext.swift in Sources */ = {isa = PBXBuildFile; fileRef = 742E4A4A21CA097700244F04 /* UIView+Ext.swift */; };
+		742E4A4D21CA09AF00244F04 /* UIColor+Ext.swift in Sources */ = {isa = PBXBuildFile; fileRef = 742E4A4C21CA09AF00244F04 /* UIColor+Ext.swift */; };
+		742E4A4F21CA0AE200244F04 /* Router.swift in Sources */ = {isa = PBXBuildFile; fileRef = 742E4A4E21CA0AE200244F04 /* Router.swift */; };
+		742E4A5121CA0AEF00244F04 /* APIClient.swift in Sources */ = {isa = PBXBuildFile; fileRef = 742E4A5021CA0AEF00244F04 /* APIClient.swift */; };
+		742E4A5321CA0B0200244F04 /* DBManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = 742E4A5221CA0B0200244F04 /* DBManager.swift */; };
+		742E4A5621CA0EEB00244F04 /* ResponseObjectSerialization.swift in Sources */ = {isa = PBXBuildFile; fileRef = 742E4A5521CA0EEB00244F04 /* ResponseObjectSerialization.swift */; };
+		742E4A5821CA0F7800244F04 /* BaseResponseError.swift in Sources */ = {isa = PBXBuildFile; fileRef = 742E4A5721CA0F7800244F04 /* BaseResponseError.swift */; };
+		742E4A5A21CA12F800244F04 /* KeywordModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 742E4A5921CA12F800244F04 /* KeywordModel.swift */; };
+		742E4A5D21CA163A00244F04 /* KeywordTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 742E4A5B21CA163A00244F04 /* KeywordTableViewCell.swift */; };
+		742E4A5E21CA163A00244F04 /* KeywordTableViewCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = 742E4A5C21CA163A00244F04 /* KeywordTableViewCell.xib */; };
+		742E4A6021CA191200244F04 /* KeywordObject.swift in Sources */ = {isa = PBXBuildFile; fileRef = 742E4A5F21CA191200244F04 /* KeywordObject.swift */; };
+		742E4A6221CA1C3C00244F04 /* KeywordHeaderView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 742E4A6121CA1C3C00244F04 /* KeywordHeaderView.swift */; };
+		742E4A6421CA1C4900244F04 /* KeywordHeaderView.xib in Resources */ = {isa = PBXBuildFile; fileRef = 742E4A6321CA1C4900244F04 /* KeywordHeaderView.xib */; };
+		742E4A6721CA1E2700244F04 /* KeywordCollectionViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 742E4A6521CA1E2700244F04 /* KeywordCollectionViewCell.swift */; };
+		742E4A6821CA1E2700244F04 /* KeywordCollectionViewCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = 742E4A6621CA1E2700244F04 /* KeywordCollectionViewCell.xib */; };
+		742E4A6A21CA2BCC00244F04 /* BaseViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 742E4A6921CA2BCC00244F04 /* BaseViewController.swift */; };
+		B8CC1B20A1B30599488930AD /* Pods_TikiDemoTests.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 66782B79B500714988471E15 /* Pods_TikiDemoTests.framework */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXContainerItemProxy section */
+		742E4A3321CA06EB00244F04 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 742E4A1621CA06EA00244F04 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 742E4A1D21CA06EA00244F04;
+			remoteInfo = TikiDemo;
+		};
+/* End PBXContainerItemProxy section */
+
+/* Begin PBXFileReference section */
+		091D98FD0F8295479055B655 /* Pods-TikiDemoTests.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-TikiDemoTests.release.xcconfig"; path = "Pods/Target Support Files/Pods-TikiDemoTests/Pods-TikiDemoTests.release.xcconfig"; sourceTree = "<group>"; };
+		42F1F716915D689FCDA790D9 /* Pods-TikiDemoTests.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-TikiDemoTests.debug.xcconfig"; path = "Pods/Target Support Files/Pods-TikiDemoTests/Pods-TikiDemoTests.debug.xcconfig"; sourceTree = "<group>"; };
+		5A1C533229599C2D7B6C442B /* Pods-TikiDemo.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-TikiDemo.debug.xcconfig"; path = "Pods/Target Support Files/Pods-TikiDemo/Pods-TikiDemo.debug.xcconfig"; sourceTree = "<group>"; };
+		66782B79B500714988471E15 /* Pods_TikiDemoTests.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_TikiDemoTests.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		742E4A1E21CA06EA00244F04 /* TikiDemo.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = TikiDemo.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		742E4A2121CA06EA00244F04 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
+		742E4A2321CA06EA00244F04 /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
+		742E4A2621CA06EA00244F04 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
+		742E4A2821CA06EB00244F04 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
+		742E4A2B21CA06EB00244F04 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
+		742E4A2D21CA06EB00244F04 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		742E4A3221CA06EB00244F04 /* TikiDemoTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = TikiDemoTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
+		742E4A3621CA06EB00244F04 /* TikiDemoTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TikiDemoTests.swift; sourceTree = "<group>"; };
+		742E4A3821CA06EB00244F04 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		742E4A4621CA08A700244F04 /* String+Ext.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "String+Ext.swift"; sourceTree = "<group>"; };
+		742E4A4821CA093A00244F04 /* UIImageView+Ext.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "UIImageView+Ext.swift"; sourceTree = "<group>"; };
+		742E4A4A21CA097700244F04 /* UIView+Ext.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "UIView+Ext.swift"; sourceTree = "<group>"; };
+		742E4A4C21CA09AF00244F04 /* UIColor+Ext.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "UIColor+Ext.swift"; sourceTree = "<group>"; };
+		742E4A4E21CA0AE200244F04 /* Router.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Router.swift; sourceTree = "<group>"; };
+		742E4A5021CA0AEF00244F04 /* APIClient.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = APIClient.swift; sourceTree = "<group>"; };
+		742E4A5221CA0B0200244F04 /* DBManager.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DBManager.swift; sourceTree = "<group>"; };
+		742E4A5521CA0EEB00244F04 /* ResponseObjectSerialization.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ResponseObjectSerialization.swift; sourceTree = "<group>"; };
+		742E4A5721CA0F7800244F04 /* BaseResponseError.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BaseResponseError.swift; sourceTree = "<group>"; };
+		742E4A5921CA12F800244F04 /* KeywordModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = KeywordModel.swift; sourceTree = "<group>"; };
+		742E4A5B21CA163A00244F04 /* KeywordTableViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = KeywordTableViewCell.swift; sourceTree = "<group>"; };
+		742E4A5C21CA163A00244F04 /* KeywordTableViewCell.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = KeywordTableViewCell.xib; sourceTree = "<group>"; };
+		742E4A5F21CA191200244F04 /* KeywordObject.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = KeywordObject.swift; sourceTree = "<group>"; };
+		742E4A6121CA1C3C00244F04 /* KeywordHeaderView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = KeywordHeaderView.swift; sourceTree = "<group>"; };
+		742E4A6321CA1C4900244F04 /* KeywordHeaderView.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = KeywordHeaderView.xib; sourceTree = "<group>"; };
+		742E4A6521CA1E2700244F04 /* KeywordCollectionViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = KeywordCollectionViewCell.swift; sourceTree = "<group>"; };
+		742E4A6621CA1E2700244F04 /* KeywordCollectionViewCell.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = KeywordCollectionViewCell.xib; sourceTree = "<group>"; };
+		742E4A6921CA2BCC00244F04 /* BaseViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BaseViewController.swift; sourceTree = "<group>"; };
+		AAEFA087AF1AC88886252E43 /* Pods-TikiDemo.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-TikiDemo.release.xcconfig"; path = "Pods/Target Support Files/Pods-TikiDemo/Pods-TikiDemo.release.xcconfig"; sourceTree = "<group>"; };
+		C6452D9A460DB15C3F58FBC0 /* Pods_TikiDemo.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_TikiDemo.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		742E4A1B21CA06EA00244F04 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				2CC0196E2A2DEE0D3BEC114D /* Pods_TikiDemo.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		742E4A2F21CA06EB00244F04 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				B8CC1B20A1B30599488930AD /* Pods_TikiDemoTests.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		742E4A1521CA06EA00244F04 = {
+			isa = PBXGroup;
+			children = (
+				742E4A2021CA06EA00244F04 /* TikiDemo */,
+				742E4A3521CA06EB00244F04 /* TikiDemoTests */,
+				742E4A1F21CA06EA00244F04 /* Products */,
+				7ACA40C874CF5DFC5A1079DA /* Pods */,
+				ADF61EC1611C18D8344005E4 /* Frameworks */,
+			);
+			sourceTree = "<group>";
+		};
+		742E4A1F21CA06EA00244F04 /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				742E4A1E21CA06EA00244F04 /* TikiDemo.app */,
+				742E4A3221CA06EB00244F04 /* TikiDemoTests.xctest */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		742E4A2021CA06EA00244F04 /* TikiDemo */ = {
+			isa = PBXGroup;
+			children = (
+				742E4A4521CA088E00244F04 /* Extensions */,
+				742E4A4121CA083600244F04 /* Networking */,
+				742E4A4421CA084C00244F04 /* Models */,
+				742E4A4221CA083C00244F04 /* Database */,
+				742E4A4321CA084100244F04 /* Views */,
+				742E4A2121CA06EA00244F04 /* AppDelegate.swift */,
+				742E4A6921CA2BCC00244F04 /* BaseViewController.swift */,
+				742E4A2321CA06EA00244F04 /* ViewController.swift */,
+				742E4A2521CA06EA00244F04 /* Main.storyboard */,
+				742E4A2821CA06EB00244F04 /* Assets.xcassets */,
+				742E4A2A21CA06EB00244F04 /* LaunchScreen.storyboard */,
+				742E4A2D21CA06EB00244F04 /* Info.plist */,
+			);
+			path = TikiDemo;
+			sourceTree = "<group>";
+		};
+		742E4A3521CA06EB00244F04 /* TikiDemoTests */ = {
+			isa = PBXGroup;
+			children = (
+				742E4A3621CA06EB00244F04 /* TikiDemoTests.swift */,
+				742E4A3821CA06EB00244F04 /* Info.plist */,
+			);
+			path = TikiDemoTests;
+			sourceTree = "<group>";
+		};
+		742E4A4121CA083600244F04 /* Networking */ = {
+			isa = PBXGroup;
+			children = (
+				742E4A4E21CA0AE200244F04 /* Router.swift */,
+				742E4A5021CA0AEF00244F04 /* APIClient.swift */,
+				742E4A5521CA0EEB00244F04 /* ResponseObjectSerialization.swift */,
+			);
+			path = Networking;
+			sourceTree = "<group>";
+		};
+		742E4A4221CA083C00244F04 /* Database */ = {
+			isa = PBXGroup;
+			children = (
+				742E4A5221CA0B0200244F04 /* DBManager.swift */,
+				742E4A5F21CA191200244F04 /* KeywordObject.swift */,
+			);
+			path = Database;
+			sourceTree = "<group>";
+		};
+		742E4A4321CA084100244F04 /* Views */ = {
+			isa = PBXGroup;
+			children = (
+				742E4A5B21CA163A00244F04 /* KeywordTableViewCell.swift */,
+				742E4A5C21CA163A00244F04 /* KeywordTableViewCell.xib */,
+				742E4A6121CA1C3C00244F04 /* KeywordHeaderView.swift */,
+				742E4A6321CA1C4900244F04 /* KeywordHeaderView.xib */,
+				742E4A6521CA1E2700244F04 /* KeywordCollectionViewCell.swift */,
+				742E4A6621CA1E2700244F04 /* KeywordCollectionViewCell.xib */,
+			);
+			path = Views;
+			sourceTree = "<group>";
+		};
+		742E4A4421CA084C00244F04 /* Models */ = {
+			isa = PBXGroup;
+			children = (
+				742E4A5721CA0F7800244F04 /* BaseResponseError.swift */,
+				742E4A5921CA12F800244F04 /* KeywordModel.swift */,
+			);
+			path = Models;
+			sourceTree = "<group>";
+		};
+		742E4A4521CA088E00244F04 /* Extensions */ = {
+			isa = PBXGroup;
+			children = (
+				742E4A4621CA08A700244F04 /* String+Ext.swift */,
+				742E4A4821CA093A00244F04 /* UIImageView+Ext.swift */,
+				742E4A4A21CA097700244F04 /* UIView+Ext.swift */,
+				742E4A4C21CA09AF00244F04 /* UIColor+Ext.swift */,
+			);
+			path = Extensions;
+			sourceTree = "<group>";
+		};
+		7ACA40C874CF5DFC5A1079DA /* Pods */ = {
+			isa = PBXGroup;
+			children = (
+				5A1C533229599C2D7B6C442B /* Pods-TikiDemo.debug.xcconfig */,
+				AAEFA087AF1AC88886252E43 /* Pods-TikiDemo.release.xcconfig */,
+				42F1F716915D689FCDA790D9 /* Pods-TikiDemoTests.debug.xcconfig */,
+				091D98FD0F8295479055B655 /* Pods-TikiDemoTests.release.xcconfig */,
+			);
+			name = Pods;
+			sourceTree = "<group>";
+		};
+		ADF61EC1611C18D8344005E4 /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				C6452D9A460DB15C3F58FBC0 /* Pods_TikiDemo.framework */,
+				66782B79B500714988471E15 /* Pods_TikiDemoTests.framework */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		742E4A1D21CA06EA00244F04 /* TikiDemo */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 742E4A3B21CA06EB00244F04 /* Build configuration list for PBXNativeTarget "TikiDemo" */;
+			buildPhases = (
+				97610AA233AE39229BBFDE7F /* [CP] Check Pods Manifest.lock */,
+				742E4A1A21CA06EA00244F04 /* Sources */,
+				742E4A1B21CA06EA00244F04 /* Frameworks */,
+				742E4A1C21CA06EA00244F04 /* Resources */,
+				3C930C47D02091D9EA4BFD00 /* [CP] Embed Pods Frameworks */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = TikiDemo;
+			productName = TikiDemo;
+			productReference = 742E4A1E21CA06EA00244F04 /* TikiDemo.app */;
+			productType = "com.apple.product-type.application";
+		};
+		742E4A3121CA06EB00244F04 /* TikiDemoTests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 742E4A3E21CA06EB00244F04 /* Build configuration list for PBXNativeTarget "TikiDemoTests" */;
+			buildPhases = (
+				D8828C37608E0B6057A4C626 /* [CP] Check Pods Manifest.lock */,
+				742E4A2E21CA06EB00244F04 /* Sources */,
+				742E4A2F21CA06EB00244F04 /* Frameworks */,
+				742E4A3021CA06EB00244F04 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				742E4A3421CA06EB00244F04 /* PBXTargetDependency */,
+			);
+			name = TikiDemoTests;
+			productName = TikiDemoTests;
+			productReference = 742E4A3221CA06EB00244F04 /* TikiDemoTests.xctest */;
+			productType = "com.apple.product-type.bundle.unit-test";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		742E4A1621CA06EA00244F04 /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				LastSwiftUpdateCheck = 1010;
+				LastUpgradeCheck = 1010;
+				ORGANIZATIONNAME = "Luan Tran";
+				TargetAttributes = {
+					742E4A1D21CA06EA00244F04 = {
+						CreatedOnToolsVersion = 10.1;
+					};
+					742E4A3121CA06EB00244F04 = {
+						CreatedOnToolsVersion = 10.1;
+						TestTargetID = 742E4A1D21CA06EA00244F04;
+					};
+				};
+			};
+			buildConfigurationList = 742E4A1921CA06EA00244F04 /* Build configuration list for PBXProject "TikiDemo" */;
+			compatibilityVersion = "Xcode 9.3";
+			developmentRegion = en;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+				Base,
+			);
+			mainGroup = 742E4A1521CA06EA00244F04;
+			productRefGroup = 742E4A1F21CA06EA00244F04 /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				742E4A1D21CA06EA00244F04 /* TikiDemo */,
+				742E4A3121CA06EB00244F04 /* TikiDemoTests */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		742E4A1C21CA06EA00244F04 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				742E4A2C21CA06EB00244F04 /* LaunchScreen.storyboard in Resources */,
+				742E4A6421CA1C4900244F04 /* KeywordHeaderView.xib in Resources */,
+				742E4A6821CA1E2700244F04 /* KeywordCollectionViewCell.xib in Resources */,
+				742E4A5E21CA163A00244F04 /* KeywordTableViewCell.xib in Resources */,
+				742E4A2921CA06EB00244F04 /* Assets.xcassets in Resources */,
+				742E4A2721CA06EA00244F04 /* Main.storyboard in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		742E4A3021CA06EB00244F04 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXShellScriptBuildPhase section */
+		3C930C47D02091D9EA4BFD00 /* [CP] Embed Pods Frameworks */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+				"${SRCROOT}/Pods/Target Support Files/Pods-TikiDemo/Pods-TikiDemo-frameworks.sh",
+				"${BUILT_PRODUCTS_DIR}/Alamofire/Alamofire.framework",
+				"${BUILT_PRODUCTS_DIR}/MBProgressHUD/MBProgressHUD.framework",
+				"${BUILT_PRODUCTS_DIR}/Realm/Realm.framework",
+				"${BUILT_PRODUCTS_DIR}/RealmSwift/RealmSwift.framework",
+				"${BUILT_PRODUCTS_DIR}/SDWebImage/SDWebImage.framework",
+			);
+			name = "[CP] Embed Pods Frameworks";
+			outputPaths = (
+				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/Alamofire.framework",
+				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/MBProgressHUD.framework",
+				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/Realm.framework",
+				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/RealmSwift.framework",
+				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/SDWebImage.framework",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-TikiDemo/Pods-TikiDemo-frameworks.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+		97610AA233AE39229BBFDE7F /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+				"${PODS_PODFILE_DIR_PATH}/Podfile.lock",
+				"${PODS_ROOT}/Manifest.lock",
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputPaths = (
+				"$(DERIVED_FILE_DIR)/Pods-TikiDemo-checkManifestLockResult.txt",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
+			showEnvVarsInLog = 0;
+		};
+		D8828C37608E0B6057A4C626 /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+				"${PODS_PODFILE_DIR_PATH}/Podfile.lock",
+				"${PODS_ROOT}/Manifest.lock",
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputPaths = (
+				"$(DERIVED_FILE_DIR)/Pods-TikiDemoTests-checkManifestLockResult.txt",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
+			showEnvVarsInLog = 0;
+		};
+/* End PBXShellScriptBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		742E4A1A21CA06EA00244F04 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				742E4A4921CA093A00244F04 /* UIImageView+Ext.swift in Sources */,
+				742E4A4721CA08A700244F04 /* String+Ext.swift in Sources */,
+				742E4A6021CA191200244F04 /* KeywordObject.swift in Sources */,
+				742E4A5621CA0EEB00244F04 /* ResponseObjectSerialization.swift in Sources */,
+				742E4A5821CA0F7800244F04 /* BaseResponseError.swift in Sources */,
+				742E4A4B21CA097700244F04 /* UIView+Ext.swift in Sources */,
+				742E4A6721CA1E2700244F04 /* KeywordCollectionViewCell.swift in Sources */,
+				742E4A6A21CA2BCC00244F04 /* BaseViewController.swift in Sources */,
+				742E4A5121CA0AEF00244F04 /* APIClient.swift in Sources */,
+				742E4A5321CA0B0200244F04 /* DBManager.swift in Sources */,
+				742E4A4F21CA0AE200244F04 /* Router.swift in Sources */,
+				742E4A4D21CA09AF00244F04 /* UIColor+Ext.swift in Sources */,
+				742E4A2421CA06EA00244F04 /* ViewController.swift in Sources */,
+				742E4A2221CA06EA00244F04 /* AppDelegate.swift in Sources */,
+				742E4A5A21CA12F800244F04 /* KeywordModel.swift in Sources */,
+				742E4A6221CA1C3C00244F04 /* KeywordHeaderView.swift in Sources */,
+				742E4A5D21CA163A00244F04 /* KeywordTableViewCell.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		742E4A2E21CA06EB00244F04 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				742E4A3721CA06EB00244F04 /* TikiDemoTests.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin PBXTargetDependency section */
+		742E4A3421CA06EB00244F04 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = 742E4A1D21CA06EA00244F04 /* TikiDemo */;
+			targetProxy = 742E4A3321CA06EB00244F04 /* PBXContainerItemProxy */;
+		};
+/* End PBXTargetDependency section */
+
+/* Begin PBXVariantGroup section */
+		742E4A2521CA06EA00244F04 /* Main.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				742E4A2621CA06EA00244F04 /* Base */,
+			);
+			name = Main.storyboard;
+			sourceTree = "<group>";
+		};
+		742E4A2A21CA06EB00244F04 /* LaunchScreen.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				742E4A2B21CA06EB00244F04 /* Base */,
+			);
+			name = LaunchScreen.storyboard;
+			sourceTree = "<group>";
+		};
+/* End PBXVariantGroup section */
+
+/* Begin XCBuildConfiguration section */
+		742E4A3921CA06EB00244F04 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++14";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				CODE_SIGN_IDENTITY = "iPhone Developer";
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = dwarf;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				ENABLE_TESTABILITY = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 12.1;
+				MTL_ENABLE_DEBUG_INFO = INCLUDE_SOURCE;
+				MTL_FAST_MATH = YES;
+				ONLY_ACTIVE_ARCH = YES;
+				SDKROOT = iphoneos;
+				SWIFT_ACTIVE_COMPILATION_CONDITIONS = DEBUG;
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
+			};
+			name = Debug;
+		};
+		742E4A3A21CA06EB00244F04 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++14";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				CODE_SIGN_IDENTITY = "iPhone Developer";
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				ENABLE_NS_ASSERTIONS = NO;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 12.1;
+				MTL_ENABLE_DEBUG_INFO = NO;
+				MTL_FAST_MATH = YES;
+				SDKROOT = iphoneos;
+				SWIFT_COMPILATION_MODE = wholemodule;
+				SWIFT_OPTIMIZATION_LEVEL = "-O";
+				VALIDATE_PRODUCT = YES;
+			};
+			name = Release;
+		};
+		742E4A3C21CA06EB00244F04 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 5A1C533229599C2D7B6C442B /* Pods-TikiDemo.debug.xcconfig */;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = M8Y7D6T362;
+				INFOPLIST_FILE = TikiDemo/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = com.tiki.TikiDemo;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 4.2;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Debug;
+		};
+		742E4A3D21CA06EB00244F04 /* Release */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = AAEFA087AF1AC88886252E43 /* Pods-TikiDemo.release.xcconfig */;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = M8Y7D6T362;
+				INFOPLIST_FILE = TikiDemo/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = com.tiki.TikiDemo;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 4.2;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Release;
+		};
+		742E4A3F21CA06EB00244F04 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 42F1F716915D689FCDA790D9 /* Pods-TikiDemoTests.debug.xcconfig */;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				CODE_SIGN_STYLE = Automatic;
+				INFOPLIST_FILE = TikiDemoTests/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@loader_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = com.tiki.TikiDemoTests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 4.2;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/TikiDemo.app/TikiDemo";
+			};
+			name = Debug;
+		};
+		742E4A4021CA06EB00244F04 /* Release */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 091D98FD0F8295479055B655 /* Pods-TikiDemoTests.release.xcconfig */;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				CODE_SIGN_STYLE = Automatic;
+				INFOPLIST_FILE = TikiDemoTests/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@loader_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = com.tiki.TikiDemoTests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 4.2;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/TikiDemo.app/TikiDemo";
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		742E4A1921CA06EA00244F04 /* Build configuration list for PBXProject "TikiDemo" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				742E4A3921CA06EB00244F04 /* Debug */,
+				742E4A3A21CA06EB00244F04 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		742E4A3B21CA06EB00244F04 /* Build configuration list for PBXNativeTarget "TikiDemo" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				742E4A3C21CA06EB00244F04 /* Debug */,
+				742E4A3D21CA06EB00244F04 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		742E4A3E21CA06EB00244F04 /* Build configuration list for PBXNativeTarget "TikiDemoTests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				742E4A3F21CA06EB00244F04 /* Debug */,
+				742E4A4021CA06EB00244F04 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+/* End XCConfigurationList section */
+	};
+	rootObject = 742E4A1621CA06EA00244F04 /* Project object */;
+}

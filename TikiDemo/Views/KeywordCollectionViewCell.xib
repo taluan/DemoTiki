@@ -1,0 +1,67 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="14460.31" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES">
+    <device id="retina4_7" orientation="portrait">
+        <adaptation id="fullscreen"/>
+    </device>
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="14460.20"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <objects>
+        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner"/>
+        <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
+        <collectionViewCell opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" reuseIdentifier="KeywordCollectionViewCellIdentifier" id="VI5-RT-uN2" customClass="KeywordCollectionViewCell" customModule="TikiDemo" customModuleProvider="target">
+            <rect key="frame" x="0.0" y="0.0" width="121" height="176"/>
+            <autoresizingMask key="autoresizingMask"/>
+            <view key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center">
+                <rect key="frame" x="0.0" y="0.0" width="121" height="176"/>
+                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                <subviews>
+                    <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" translatesAutoresizingMaskIntoConstraints="NO" id="bcF-3f-ORF">
+                        <rect key="frame" x="12.5" y="10" width="96" height="96"/>
+                        <constraints>
+                            <constraint firstAttribute="width" constant="96" id="On0-Og-SPm"/>
+                            <constraint firstAttribute="height" constant="96" id="l1D-zH-cPH"/>
+                        </constraints>
+                    </imageView>
+                    <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="Abt-jA-bVF">
+                        <rect key="frame" x="0.0" y="116" width="121" height="60"/>
+                        <subviews>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="center" horizontalHuggingPriority="251" verticalHuggingPriority="251" horizontalCompressionResistancePriority="751" verticalCompressionResistancePriority="751" text="máy ảnh Fujifilm" textAlignment="center" lineBreakMode="wordWrap" numberOfLines="2" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Kdm-B1-0oT">
+                                <rect key="frame" x="16" y="0.0" width="89" height="60"/>
+                                <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                <fontDescription key="fontDescription" name="KohinoorBangla-Semibold" family="Kohinoor Bangla" pointSize="14"/>
+                                <color key="textColor" red="0.92344146569999996" green="0.92344146569999996" blue="0.92344146569999996" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                        </subviews>
+                        <color key="backgroundColor" red="0.086274509799999996" green="0.43921568630000002" blue="0.18039215689999999" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                        <constraints>
+                            <constraint firstItem="Kdm-B1-0oT" firstAttribute="leading" secondItem="Abt-jA-bVF" secondAttribute="leading" constant="16" id="3xD-uu-vUM"/>
+                            <constraint firstItem="Kdm-B1-0oT" firstAttribute="top" secondItem="Abt-jA-bVF" secondAttribute="top" id="Vuz-6a-2Bk"/>
+                            <constraint firstAttribute="trailing" secondItem="Kdm-B1-0oT" secondAttribute="trailing" constant="16" id="acW-OP-P9U"/>
+                            <constraint firstAttribute="height" constant="60" id="e3M-Sb-o95"/>
+                            <constraint firstAttribute="bottom" secondItem="Kdm-B1-0oT" secondAttribute="bottom" id="g6a-uK-KqU"/>
+                            <constraint firstAttribute="width" relation="greaterThanOrEqual" constant="121" id="zrt-Kb-d9b"/>
+                        </constraints>
+                    </view>
+                </subviews>
+            </view>
+            <constraints>
+                <constraint firstAttribute="bottom" secondItem="Abt-jA-bVF" secondAttribute="bottom" id="8mA-WN-1LC"/>
+                <constraint firstItem="bcF-3f-ORF" firstAttribute="centerX" secondItem="VI5-RT-uN2" secondAttribute="centerX" id="Ahh-q5-Bq5"/>
+                <constraint firstAttribute="trailing" secondItem="Abt-jA-bVF" secondAttribute="trailing" id="CgK-bB-7Q1"/>
+                <constraint firstItem="Abt-jA-bVF" firstAttribute="top" secondItem="bcF-3f-ORF" secondAttribute="bottom" constant="10" id="EW3-OF-dLg"/>
+                <constraint firstItem="Abt-jA-bVF" firstAttribute="leading" secondItem="VI5-RT-uN2" secondAttribute="leading" id="Zwy-SJ-kni"/>
+            </constraints>
+            <size key="customSize" width="121" height="129"/>
+            <connections>
+                <outlet property="iconImageView" destination="bcF-3f-ORF" id="i0k-qj-r5v"/>
+                <outlet property="keywordBoxView" destination="Abt-jA-bVF" id="I7G-az-lfJ"/>
+                <outlet property="keywordLabel" destination="Kdm-B1-0oT" id="ENZ-q7-yLY"/>
+            </connections>
+            <point key="canvasLocation" x="52" y="17.541229385307346"/>
+        </collectionViewCell>
+    </objects>
+</document>
